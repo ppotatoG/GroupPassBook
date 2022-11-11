@@ -1,0 +1,63 @@
+$point-yellow: #ffdc00;
+
+@mixin flex($j: center, $a: center, $g: 0) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+    gap: $g;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+.header {
+    padding: 4vw;
+    @include flex($j: space-between);
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    figure {
+        flex: 0 0 16vw;
+        height: 16vw;
+        box-sizing: border-box;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            display: block;
+        }
+    }
+}
+
+.card {
+    background: $point-yellow;
+    padding: 4vw;
+    border-radius: 10px;
+    &__price {
+        margin: 4vw auto;
+        text-align: center;
+        font: {
+            size: 12vw;
+            weight: bold;
+        };
+    }
+    &__list {
+        @include flex();
+        li {
+            box-sizing: border-box;
+            overflow: hidden;
+            margin-left: -4vw;
+            border: {
+                radius: 50%;
+                style: solid;
+                color: $point-yellow;
+                width: 4px;
+            };
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+}
