@@ -10,7 +10,7 @@ const Card = () => {
 
     return (
         <div className={styles.card}>
-            <h3>🎉REACT STUDY GROUP</h3>
+            <h3>🎉 REACT STUDY GROUP</h3>
             <p className={styles.card__price}>{
                 totalNum
                     .toString()
@@ -29,6 +29,7 @@ const Card = () => {
                     })
                 }
             </ul>
+            <a className={styles.card__button} href="/list"></a>
         </div>
     );
 };

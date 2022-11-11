@@ -63,11 +63,11 @@ const json = {
             targetId: 2
         },
         5: {
-            "calculation": 5000,
-            "dateTime": "2022-11-06",
-            "description": "입금",
-            "id": "history13",
-            "targetId": 4
+            calculation: 5000,
+            dateTime: "2022-11-06",
+            description: "입금",
+            id: "history13",
+            targetId: 4
         },
         6: {
             calculation: 5000,

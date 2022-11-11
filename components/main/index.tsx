@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '@components/main/header';
-import Card from "@components/main/Card";
+import Card from "@components/main/card";
 
 const Main : React.JSXElementConstructor<any> = () => {
     return (

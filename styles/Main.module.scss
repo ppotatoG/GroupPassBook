@@ -12,16 +12,16 @@ $point-yellow: #ffdc00;
     height: $h;
 }
 .header {
-    padding: 4vw;
+    padding: 1rem;
     @include flex($j: space-between);
 
     h3 {
-        font-size: 6vw;
+        font-size: 2rem;
     }
 
     figure {
-        flex: 0 0 16vw;
-        height: 16vw;
+        flex: 0 0 2rem;
+        height: 2rem;
         box-sizing: border-box;
         border-radius: 50%;
         overflow: hidden;
@@ -32,14 +32,15 @@ $point-yellow: #ffdc00;
 }
 
 .card {
+    position: relative;
     background: $point-yellow;
-    padding: 4vw;
+    padding: 2rem;
     border-radius: 10px;
     &__price {
-        margin: 4vw auto;
+        margin: 2rem auto;
         text-align: center;
         font: {
-            size: 12vw;
+            size: 3rem;
             weight: bold;
         };
     }
@@ -48,7 +49,7 @@ $point-yellow: #ffdc00;
         li {
             box-sizing: border-box;
             overflow: hidden;
-            margin-left: -4vw;
+            margin-left: -1rem;
             border: {
                 radius: 50%;
                 style: solid;
@@ -59,5 +60,11 @@ $point-yellow: #ffdc00;
                 margin-left: 0;
             }
         }
+    }
+    &__button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include size(100%, 100%);
     }
 }

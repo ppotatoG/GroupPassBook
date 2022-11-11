@@ -1,0 +1,72 @@
+$point-yellow: #ffdc00;
+
+@mixin flex($j: center, $a: center, $g: 0) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+    gap: $g;
+}
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+.list {
+    max-width: 400px;
+    margin: 0 auto;
+    .header {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: $point-yellow;
+        b {
+            font: {
+                size: 3rem;
+                weight: bold;
+            }
+        }
+        p {
+            font-size: .8rem;
+        }
+        &__user_list {
+            margin: 2rem auto 0;
+            @include flex;
+            li {
+                box-sizing: border-box;
+                overflow: hidden;
+                margin-left: -1rem;
+                border: {
+                    radius: 50%;
+                    style: solid;
+                    color: $point-yellow;
+                    width: 4px;
+                };
+                &:first-child{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .account {
+        li {
+            padding: 2rem 0;
+            @include flex($j: flex-start);
+            p {
+                flex: 0 0 25%;
+                &:nth-of-type(2) {
+                    flex: 1 1 60%;
+                }
+                &:nth-of-type(3) {
+                    flex: 0 0 10%;
+                    text-align: right;
+                }
+            }
+            & + li {
+                border-top: {
+                    style: solid;
+                    width: 1px;
+                    color: #eee;
+                }
+            }
+        }
+    }
+}
