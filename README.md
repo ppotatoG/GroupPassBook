@@ -1,6 +1,6 @@
 # 리액트 스터디 모임 정산 페이지 클론코딩
 
-[FE-HyunSu/groupAccountBook](https://github.com/FE-HyunSu/groupAccountBook)
+[FE-HyunSu/groupAccountBook](https://github.com/FE-HyunSu/groupAccountBook) 
 
 [groupAccountBook](https://illustrious-arithmetic-f0422e.netlify.app)
 
